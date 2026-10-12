@@ -124,7 +124,7 @@ An open-source Next.js starter for AI-powered SaaS products.
 ### 3.2 拉代码并安装依赖
 
 ```bash
-git clone <你的仓库地址> ai-saas-template
+git clone https://github.com/wuyunxing123/ai-saas-template.git
 cd ai-saas-template
 npm ci
 ```

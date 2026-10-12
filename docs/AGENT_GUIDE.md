@@ -76,7 +76,7 @@ Phase 2 ~ 9.6 的全部内容就是在**消除重复实现**：
 - 产品无关的通用能力 → **Core**
 - ⚠️ 名字有三类，别混：**母版身份** `ai-saas-template`（package/PWA/env 默认值，属 Core 元数据）、
   **产品品牌**（`NEXT_PUBLIC_PROJECT_NAME` → `siteConfig.projectName`，唯一读取点）、
-  **上游归属**（`CharlieLZ/flux-kontext-template` 的 `LICENSE` 版权行与 issue 模板里的安全报告 URL —— **不得改写**）。
+  **上游归属**（`CharlieLZ/flux-kontext-template` 的 `LICENSE` 版权行 —— MIT 的署名条件，**不得改写**）。
   新产品换品牌只动 env，不改母版名；看到旧仓库名先问它是哪一类，只有第一类该改。
 
 **Q2：我要改的目录，允许依赖 Product 吗？**

@@ -285,7 +285,8 @@ export class ExampleProductService {
 
 | 保留项 | 原因 |
 |---|---|
-| `CharlieLZ/flux-kontext-template`：`LICENSE` 版权行、`.github/ISSUE_TEMPLATE/config.yml` 的安全报告 URL、`docs/archive/**` 里的原始资料 | **上游来源与版权归属**。这是唯一真实存在的远端；改名不改写来源，伪造一个新 URL 会让文档失效 |
+| `CharlieLZ/flux-kontext-template`：`LICENSE` 版权行、`docs/archive/**` 里的原始资料 | **上游来源与版权归属**。MIT 的署名条件就是保留作者版权行，改名不改写来源 |
+| `.github/ISSUE_TEMPLATE/config.yml` 的安全报告 URL | **已指向本仓库**（`wuyunxing123/ai-saas-template/security`）。漏洞报告应该到达当前仓库所有者；上游归属仍由 `LICENSE` 承担，两者不冲突。该链接要能打开，需在仓库 Settings → Code security 里启用 Private vulnerability reporting |
 | `flux-kontext` / `Flux Kontext` / `FLUX`：`src/lib/products/flux-kontext/**`、`src/components/FluxKontextGenerator.tsx`、`src/app/api/flux-kontext/`、模型 id（`black-forest-labs/flux-*`）、`docs/FLUX_PRODUCT.md` | **示例产品自己的名字**与厂商真实模型 id，属于产品层 / 外部事实 |
 | 第三方依赖名：`@fal-ai/client`、`@supabase/*`、`stripe`、`creem`、`next` … | 依赖身份，改了装不上 |
 | `docs/archive/**`、`docs/REFACTOR_PLAN.md`、`docs/PROJECT_STATUS.md` 里的历史行（如 B-19「Phase 6 改 `ai-saas-template`」） | **历史记录**。归档 README 已经声明这批文档来自 `flux-kontext-template` 时期，改写历史等于伪造证据 |

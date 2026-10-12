@@ -123,8 +123,10 @@
 > 判为不同步）、`README.md` 标题、`public/manifest.json`、`.env.example` 里
 > `NEXT_PUBLIC_PROJECT_NAME` 的默认值、`src/lib/site-config.ts` 的回落值。
 > **逐项判断，不做全局替换**：上游来源（`CharlieLZ/flux-kontext-template` 的
-> `LICENSE` 版权行 / 安全报告 URL / `docs/archive/**` 原始资料）、Flux Kontext 这个**示例产品**的名字、
+> `LICENSE` 版权行 / `docs/archive/**` 原始资料）、Flux Kontext 这个**示例产品**的名字、
 > 第三方依赖名、`docs/archive/**` 与历史行里的旧称，**全部保留**。
+> （发布到新 GitHub 账号时，`.github/ISSUE_TEMPLATE/config.yml` 的安全报告 URL 改指本仓库 ——
+> 漏洞报告要到达当前仓库所有者；`LICENSE` 版权行不动。）
 > 品牌与身份从此分离：产品换品牌只改 `NEXT_PUBLIC_PROJECT_NAME`，不碰母版名 —— 完整清单
 > 与每条保留理由见 [`PRODUCT_GUIDE.md` §4.5](./PRODUCT_GUIDE.md)。**改名与最终定名都在
 > Phase 9.8.2-D 这一轮完成**，验证：改名后门禁 **19 通过 · 0 失败 · 0 跳过**（exit 0，含 `verify-flux-kontext` 与 `build`），
