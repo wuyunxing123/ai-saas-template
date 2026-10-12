@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Flux Kontext AI - Professional AI Image Generation & Editing Platform",
+    "description": "Advanced AI image generation platform powered by Flux Kontext. Create stunning images from text, edit existing images, and process multiple images with cutting-edge AI technology.",
+    "keywords": [
+      "flux kontext ai",
+      "ai image generation",
+      "text to image ai",
+      "ai image editing",
+      "flux ai generator",
+      "professional ai images",
+      "multi-image processing",
+      "ai image creator"
+    ]
+  },
+  "openGraph": {
+    "title": "Flux Kontext AI - Professional AI Image Generation Platform",
+    "description": "Create stunning images with advanced AI technology. Text-to-image, image editing, and multi-image processing capabilities."
+  },
+  "twitter": {
+    "title": "Flux Kontext AI - Professional AI Image Generation Platform",
+    "description": "Create stunning images with advanced AI technology. Text-to-image, image editing, and multi-image processing capabilities."
+  },
+  "structuredData": {
+    "organization": {
+      "name": "Flux Kontext",
+      "description": "Professional AI image generation platform powered by Flux Kontext. Create stunning images from text descriptions with advanced AI technology.",
+      "contactType": "customer service",
+      "availableLanguage": ["English"],
+      "addressCountry": "US"
+    },
+    "software": {
+      "name": "Flux Kontext AI Image Generator",
+      "description": "Professional AI image generation platform. Create stunning images from text descriptions with advanced Flux Kontext AI technology.",
+      "applicationCategory": "ImageEditingApplication",
+      "operatingSystem": "Web Browser",
+      "freeDescription": "Free AI image generation with Flux Kontext",
+      "features": [
+        "Text to image AI generation",
+        "Image editing with AI",
+        "Multiple image processing",
+        "Professional image output",
+        "Flux Kontext Pro and Max models",
+        "AI-powered image creation"
+      ]
+    },
+    "service": {
+      "name": "Flux Kontext AI Image Generation Service",
+      "description": "Professional AI image generation service with multiple pricing plans powered by Flux Kontext technology",
+      "plans": {
+        "free": "Free AI image generation with basic features",
+        "plus": "Enhanced AI image generation with Flux Kontext Pro",
+        "pro": "Premium AI image generation with Flux Kontext Max",
+        "enterprise": "Enterprise-grade AI image generation with priority support"
+      }
+    }
+  }
+} 

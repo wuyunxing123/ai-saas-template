@@ -1,0 +1,7 @@
+[
+  "src/components/FluxKontextGenerator.tsx",
+  "src/components/UpgradePrompt.tsx",
+  "src/components/flux-kontext/generator-config-card.tsx",
+  "src/components/flux-kontext/generator-workspace-card.tsx",
+  "src/components/flux-kontext/model-config.ts"
+]

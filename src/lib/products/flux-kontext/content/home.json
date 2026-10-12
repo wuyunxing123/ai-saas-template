@@ -1,0 +1,132 @@
+{
+  "hero": {
+    "badge": "Professional AI Image Generation Platform",
+    "title": "Create Stunning Images with Flux Kontext AI",
+    "description": "Transform your ideas into professional images with our cutting-edge AI technology. Generate images from text, edit existing images, and process multiple images with the power of Flux Kontext AI."
+  },
+  "features": {
+    "title": "Key Features of Flux Kontext AI Platform",
+    "description": "Our Flux Kontext AI combines cutting-edge technology to deliver professional image generation and editing in one seamless platform.",
+    "items": [
+      {
+        "title": "Text to Image Generation",
+        "description": "Transform your text descriptions into stunning, high-quality images with advanced AI technology."
+      },
+      {
+        "title": "Professional Image Editing",
+        "description": "Edit existing images with natural language instructions for precise modifications."
+      },
+      {
+        "title": "Multi-Image Processing",
+        "description": "Process multiple images simultaneously with consistent style and quality."
+      },
+      {
+        "title": "Advanced AI Models",
+        "description": "Powered by Flux Pro and Max models for superior image quality and detail."
+      },
+      {
+        "title": "Flexible Aspect Ratios",
+        "description": "Generate images in various aspect ratios from square to ultra-wide formats."
+      },
+      {
+        "title": "Professional Output",
+        "description": "Export high-resolution images in multiple formats for professional use."
+      }
+    ]
+  },
+  "howTo": {
+    "title": "How to Create AI Images in 4 Simple Steps",
+    "description": "Follow these easy steps to create professional AI-generated images with Flux Kontext AI platform.",
+    "alternativeTitle": "How to Create Images with AI",
+    "alternativeDescription": "Follow these simple steps to transform your ideas into professional images using our advanced AI image generation technology.",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Write Your Prompt",
+        "description": "Enter your text description or creative prompt that you want to convert into a professional image."
+      },
+      {
+        "number": "2",
+        "title": "Customize Settings",
+        "description": "Choose image style, aspect ratio, quality, and additional features like model type and guidance scale."
+      },
+      {
+        "number": "3",
+        "title": "Generate Image",
+        "description": "Our AI image generation system processes your prompt and creates professional images with advanced AI technology."
+      },
+      {
+        "number": "4",
+        "title": "Download & Edit",
+        "description": "Preview your AI-generated images, make any edits, and download your professional image creations."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Flux Kontext AI - Frequently Asked Questions",
+    "description": "Find answers to common questions about our Flux Kontext AI platform and its powerful image generation features.",
+    "items": [
+      {
+        "question": "What is Flux Kontext AI?",
+        "answer": "Flux Kontext AI is an advanced image generation platform that uses cutting-edge artificial intelligence to create stunning images from text descriptions, edit existing images, and process multiple images simultaneously."
+      },
+      {
+        "question": "How does text-to-image generation work?",
+        "answer": "Our AI analyzes your text description and generates high-quality images using advanced Flux Pro and Max models. Simply describe what you want to see, and our AI creates professional-grade images in seconds."
+      },
+      {
+        "question": "Can I edit existing images with Flux Kontext?",
+        "answer": "Yes! Our platform supports image editing through natural language instructions. Upload an image and describe the changes you want, and our AI will apply those modifications professionally."
+      },
+      {
+        "question": "What image formats and sizes are supported?",
+        "answer": "Flux Kontext AI supports multiple aspect ratios including 1:1, 16:9, 9:16, 4:3, 3:2, and 21:9. You can export images in JPEG and PNG formats at high resolution for professional use."
+      },
+      {
+        "question": "How many images can I generate at once?",
+        "answer": "You can generate up to 4 images simultaneously with our multi-image processing feature. This allows you to explore different variations of your concept efficiently."
+      },
+      {
+        "question": "What makes Flux Kontext different from other AI image generators?",
+        "answer": "Flux Kontext stands out with its advanced Flux Pro and Max models, professional image editing capabilities, multi-image processing, and flexible aspect ratio support all in one seamless platform."
+      },
+      {
+        "question": "Are there any usage limits or restrictions?",
+        "answer": "Usage depends on your plan and API limits. Our platform includes safety controls and content filtering to ensure responsible AI image generation while maintaining creative freedom."
+      },
+      {
+        "question": "Can I use generated images commercially?",
+        "answer": "Yes, images generated through Flux Kontext AI can typically be used for commercial purposes. Please review the specific terms of service and licensing agreements for detailed usage rights."
+      }
+    ]
+  },
+  "footer": {
+    "brand": {
+      "name": "Flux Kontext",
+      "description": "Professional AI image generation platform. Create stunning images from text, edit existing images, and process multiple images with advanced AI technology.",
+      "copyright": "© 2025 Flux Kontext. All rights reserved."
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "{{supportEmail}}"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "refund": "Refund Policy"
+    },
+    "languages": {
+      "title": "Languages"
+    },
+    "social": {
+      "builtWith": "Built with ❤️ for creators worldwide",
+      "followUs": "Follow us on"
+    }
+  },
+  "twitterShowcase": {
+    "title": "AI Image Generation Showcase",
+    "description": "Discover amazing AI-generated images from leading platforms showcasing the latest in artificial intelligence technology.",
+    "scrollHint": "Scroll to explore more"
+  }
+} 

@@ -1,0 +1,90 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "devCommand": "npm run dev",
+  "regions": ["hkg1", "sin1", "sfo1"],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
+  },
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 60
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ],
+  "rewrites": [],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-forwarded-proto",
+          "value": "http"
+        },
+        {
+          "type": "host",
+          "value": "(?<host>.*)"
+        }
+      ],
+      "destination": "https://:host/$1",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs",
+      "destination": "/resources/api",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www\\.(?<apex>.*)"
+        }
+      ],
+      "destination": "https://:apex/$1",
+      "statusCode": 301
+    },
+    {
+      "source": "/free",
+      "destination": "/resources",
+      "statusCode": 301
+    },
+    {
+      "source": "/api-docs",
+      "destination": "/resources/api",
+      "statusCode": 301
+    },
+    {
+      "source": "/documentation",
+      "destination": "/resources/api",
+      "statusCode": 301
+    }
+  ]
+} 

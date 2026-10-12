@@ -1,0 +1,92 @@
+{
+  "title": "Flux Kontext AI Generator",
+  "description": "Create and edit professional images with advanced AI technology",
+  "subtitle": "Transform your ideas into stunning visuals with our cutting-edge AI image generation platform",
+  "prompts": {
+    "textToImage": "Describe the image you want to create...",
+    "editInstructions": "Describe what you want to change in the images...",
+    "referenceImages": "Reference Images (Optional)",
+    "placeholder": "A beautiful sunset over mountains with vibrant colors..."
+  },
+  "settings": {
+    "model": "Model",
+    "aspectRatio": "Aspect Ratio",
+    "imageCount": "Image Count",
+    "guidanceScale": "Guidance Scale",
+    "safetyTolerance": "Safety Tolerance",
+    "outputFormat": "Output Format",
+    "seed": "Seed (Optional)",
+    "privateMode": "Private Mode",
+    "generationMode": "Generation Mode"
+  },
+  "models": {
+    "pro": {
+      "name": "Flux Kontext Pro",
+      "description": "Fast generation with good quality"
+    },
+    "max": {
+      "name": "Flux Kontext Max",
+      "description": "Best quality, slower generation"
+    }
+  },
+  "aspectRatios": {
+    "1:1": "Square",
+    "16:9": "Landscape",
+    "9:16": "Portrait",
+    "4:3": "Standard",
+    "3:2": "Photo",
+    "21:9": "Ultra-wide"
+  },
+  "safetyLevels": {
+    "1": "Most Strict",
+    "2": "Strict",
+    "3": "Moderate",
+    "4": "Permissive",
+    "5": "Most Permissive"
+  },
+  "modes": {
+    "public": "Public",
+    "private": "Private"
+  },
+  "errors": {
+    "noPrompt": "Please enter a prompt",
+    "noEditPrompt": "Please enter an edit prompt",
+    "noImages": "Please upload images to edit",
+    "invalidImage": "Invalid image format",
+    "rateLimited": "Rate limit exceeded",
+    "serverError": "Server error occurred",
+    "uploadFailed": "File upload failed",
+    "generationFailed": "Sign in to start creating! Get 100 free credits instantly.",
+    "verificationFailed": "Verification failed, please try again",
+    "verificationRequired": "Please complete verification"
+  },
+  "features": {
+    "characterConsistency": "Character Consistency",
+    "styleTransfer": "Style Transfer",
+    "multiImageSupport": "Multi-Image Support",
+    "highResolution": "High Resolution Output",
+    "commercialUse": "Commercial Use Rights",
+    "priorityProcessing": "Priority Processing"
+  },
+  "tips": {
+    "promptEnhancement": "Use descriptive language for better results",
+    "aspectRatioSelection": "Choose aspect ratio based on your intended use",
+    "modelSelection": "Pro for speed, Max for quality",
+    "seedUsage": "Use seed for reproducible results"
+  },
+  "actions": {
+    "textToImage": "Text to Image",
+    "editImage": "Edit Image",
+    "multiEdit": "Multi-Image Edit",
+    "enhance": "Enhance",
+    "upscale": "Upscale"
+  },
+  "enhancementPrefixes": [
+    "Professional photo of ",
+    "High-quality image of ",
+    "Artistic rendering of ",
+    "Detailed photograph of ",
+    "Masterpiece depicting ",
+    "Premium quality "
+  ]
+} 

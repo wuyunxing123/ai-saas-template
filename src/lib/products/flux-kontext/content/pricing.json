@@ -1,0 +1,143 @@
+{
+  "title": "Choose Your AI Image Generation Plan",
+  "description": "Select the perfect plan for your AI image generation needs. From basic features to professional-grade solutions.",
+  "tabs": {
+    "subscriptionPlans": "Subscription Plans",
+    "creditPacks": "Credit Packs"
+  },
+  "billing": {
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "savePercent": "Save 17%"
+  },
+  "plans": [
+    {
+      "id": "basic",
+      "name": "Basic",
+      "description": "Perfect for hobbyists and beginners",
+      "monthlyPrice": 0,
+      "yearlyPrice": 0,
+      "features": [
+        "100 credits on signup",
+        "Standard image resolution",
+        "Basic AI models",
+        "Standard processing speed"
+      ],
+      "buttonText": "Get Started Free"
+    },
+    {
+      "id": "plus",
+      "name": "Plus",
+      "description": "For creators and professionals",
+      "monthlyPrice": 9.90,
+      "yearlyPrice": 99,
+      "packageIds": {
+        "monthly": "plus_monthly",
+        "yearly": "plus_yearly"
+      },
+      "features": [
+        "1900 credits per month",
+        "24000 credits per year (2000/month)",
+        "High resolution images",
+        "Advanced AI models",
+        "Priority processing",
+        "Commercial usage rights",
+        "Priority support"
+      ],
+      "isPopular": true,
+      "buttonText": "Subscribe"
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "description": "For teams and businesses",
+      "monthlyPrice": 29.90,
+      "yearlyPrice": 299,
+      "packageIds": {
+        "monthly": "pro_monthly",
+        "yearly": "pro_yearly"
+      },
+      "features": [
+        "8900 credits per month",
+        "120000 credits per year (10000/month)",
+        "Ultra-high resolution",
+        "All AI models access",
+        "Fastest processing",
+        "Commercial usage rights",
+        "Priority support"
+      ],
+      "buttonText": "Subscribe"
+    }
+  ],
+  "creditPacks": [
+    {
+      "id": "starter",
+      "name": "Starter Pack",
+      "description": "Great for occasional use",
+      "credits": 600,
+      "price": 4.90,
+      "packageId": "starter",
+      "features": ["Never expires"],
+      "buttonText": "Purchase"
+    },
+    {
+      "id": "creator",
+      "name": "Creator Pack",
+      "description": "Ideal for professional creators",
+      "credits": 4000,
+      "price": 15.00,
+      "packageId": "creator",
+      "features": ["Never expires"],
+      "isPopular": true,
+      "buttonText": "Purchase"
+    },
+    {
+      "id": "business",
+      "name": "Business Pack",
+      "description": "Best value for businesses & heavy users",
+      "credits": 18000,
+      "price": 60.00,
+      "packageId": "business",
+      "features": ["Never expires"],
+      "buttonText": "Purchase"
+    }
+  ],
+  "notice": {
+    "title": "Important Notice",
+    "content": "We are committed to delivering exceptional AI-powered visual content creation and editing experiences. For all premium customers, if you're not completely satisfied with our service, we offer discretionary refunds. Contact us anytime for FOUNDER FIRST PRIORITY support and personalized assistance to ensure your complete satisfaction with our platform."
+  },
+  "faq": [
+    {
+      "question": "Can I cancel my subscription anytime?",
+      "answer": "Yes, you can cancel your subscription at any time. Your access will continue until the end of your current billing period."
+    },
+    {
+      "question": "How are credits calculated within the app?",
+      "answer": "Please check the credit calculation details in the generation interface."
+    },
+    {
+      "question": "Can I use the generated images commercially?",
+      "answer": "Yes, Plus and Pro plan subscribers have full commercial rights to use their generated images for business purposes."
+    },
+    {
+      "question": "What is your refund policy?",
+      "answer": "Please refer to our Refund Policy in the footer for detailed information about our refund terms and conditions."
+    },
+    {
+      "question": "Will my unused credits roll over to the next month or billing cycle?",
+      "answer": "Credits expire at the end of each billing cycle and do not roll over to the next period to ensure fair usage."
+    },
+    {
+      "question": "Can I change my plan later?",
+      "answer": "Yes, you can upgrade or downgrade your plan at any time."
+    },
+    {
+      "question": "How can I get technical support?",
+      "answer": "Get help through our customer service center by emailing {{supportEmail}}. Our team will respond to your inquiries as soon as possible."
+    },
+    {
+      "question": "What should I do if I run out of my credits mid-month?",
+      "answer": "You can purchase additional credit packs or upgrade to a higher tier plan that includes more monthly credits."
+    }
+  ]
+} 

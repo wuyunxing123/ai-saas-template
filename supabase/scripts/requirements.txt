@@ -1,0 +1,13 @@
+# supabase/scripts/validate_migrations.py 的依赖
+#
+# 用法：
+#   python -m venv .venv
+#   .venv/Scripts/pip install -r supabase/scripts/requirements.txt   # Windows
+#   .venv/bin/pip install -r supabase/scripts/requirements.txt       # macOS / Linux
+#
+# 脚本会自动探测 .venv，也可用 PYTHON=<path> 显式指定解释器。
+#
+# 说明：本项目只把 sqlglot 用于**静态** SQL 校验。
+# 迁移的**真实执行**验证走 supabase/scripts/verify_migrations.mjs（PGlite，Node 侧），
+# 不依赖 Python。
+sqlglot>=25.0

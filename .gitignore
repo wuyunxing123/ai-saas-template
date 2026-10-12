@@ -1,0 +1,60 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+.worktrees/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files —— 忽略真实环境文件，但**保留** .env.example（模板必需）
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# Bun
+.bun
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+/src/generated/prisma
+
+# python —— supabase/scripts/validate_migrations.py 的 sqlglot 虚拟环境
+# （verify-all.mjs 会优先探测 ./.venv，见 docs/DATABASE.md §9.2）
+/.venv/
+__pycache__/
+*.py[cod]
+
+# agent 本地工作状态 —— 不是模板的产品源码，也不是架构资产。
+# 其中**已验证、长期有效**的结论应整理进 docs/，而不是提交这些文件本身。
+# 注意：`.workbuddy-ai/memory/` 下有 5 个文件是早期就已入库的（仍被跟踪），
+# 本条规则只对新文件生效；清理它们需要单独的 `git rm --cached` 批次。
+.workbuddy-ai/memory/
