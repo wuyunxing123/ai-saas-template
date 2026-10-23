@@ -4,24 +4,17 @@ import { productContent } from '@/app/product-content'
 import { generateMultilingualMetadata } from '@/lib/seo/metadata-generator'
 
 export const metadata: Metadata = generateMultilingualMetadata({
-  title: 'Flux Kontext AI - Professional AI Image Generation & Editing Platform',
-  description: 'Advanced AI image generation platform powered by Flux Kontext. Create stunning images from text, edit existing images, and process multiple images with cutting-edge AI technology.',
+  title: 'Flux Kontext AI - 专业 AI 图像生成与编辑平台',
+  description: '基于 Flux Kontext 的先进 AI 图像生成平台：从文字生成图像、编辑现有图像、批量处理多图，一个工作台完成全部创作。',
   keywords: [
-    'flux kontext ai', 
-    'ai image generation', 
-    'text to image ai',
-    'ai image editing',
-    'flux ai generator',
-    'professional ai images',
-    'multi-image processing',
-    'ai image creator',
-    'flux kontext platform',
-    'advanced image ai',
-    'ai powered imaging',
-    'flux image generation',
-    'kontext ai technology',
-    'professional image creation',
-    'ai visual content'
+    'flux kontext ai',
+    'ai 图像生成',
+    '文字生成图像',
+    'ai 修图',
+    'flux ai 生成器',
+    '多图批量处理',
+    'ai 图像创作',
+    '专业图像生成'
   ],
   path: '/',
   images: ['/og-home.png'],

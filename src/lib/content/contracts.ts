@@ -83,11 +83,50 @@ export interface ShowcaseContent {
   scrollHint: string
 }
 
+export interface ToolboxItem {
+  title: string
+  description: string
+  tags: string[]
+  href: string
+  cta: string
+}
+
+export interface ToolboxContent {
+  eyebrow: string
+  title: string
+  description: string
+  items: ToolboxItem[]
+}
+
+export interface TestimonialItem {
+  avatar: string
+  name: string
+  role: string
+  quote: string
+  tags: string[]
+}
+
+export interface TestimonialsContent {
+  eyebrow: string
+  title: string
+  description: string
+  items: TestimonialItem[]
+}
+
+export interface FinalCtaContent {
+  title: string
+  description: string
+  button: string
+}
+
 export interface HomeContentData {
   hero: HeroContent
   features: FeaturesContent
   howTo: HowToContent
+  toolbox: ToolboxContent
+  testimonials: TestimonialsContent
   faq: FaqContent
+  finalCta: FinalCtaContent
   footer: FooterContent
   twitterShowcase: ShowcaseContent
 }

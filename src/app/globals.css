@@ -4,30 +4,30 @@
 
 @layer base {
   :root {
-    --background: 9 13 18;
-    --foreground: 245 247 250;
-    --card: 12 17 23;
-    --card-foreground: 245 247 250;
-    --popover: 12 17 23;
-    --popover-foreground: 245 247 250;
-    --primary: 10 132 255;
-    --primary-foreground: 245 247 250;
-    --secondary: 44 52 66;
-    --secondary-foreground: 245 247 250;
-    --muted: 26 32 40;
-    --muted-foreground: 152 163 178;
-    --accent: 94 211 255;
-    --accent-foreground: 9 13 18;
-    --destructive: 255 69 58;
-    --destructive-foreground: 245 247 250;
-    --success: 52 199 89;
-    --success-foreground: 9 13 18;
-    --warning: 255 159 10;
-    --warning-foreground: 9 13 18;
-    --border: 52 63 78;
-    --input: 52 63 78;
-    --ring: 10 132 255;
-    --radius: 0.5rem;
+    --background: 246 245 241;
+    --foreground: 26 25 23;
+    --card: 255 255 255;
+    --card-foreground: 26 25 23;
+    --popover: 255 255 255;
+    --popover-foreground: 26 25 23;
+    --primary: 124 92 252;
+    --primary-foreground: 255 255 255;
+    --secondary: 238 236 231;
+    --secondary-foreground: 26 25 23;
+    --muted: 240 239 234;
+    --muted-foreground: 112 109 102;
+    --accent: 238 236 231;
+    --accent-foreground: 26 25 23;
+    --destructive: 220 38 38;
+    --destructive-foreground: 255 255 255;
+    --success: 22 163 74;
+    --success-foreground: 255 255 255;
+    --warning: 217 119 6;
+    --warning-foreground: 255 255 255;
+    --border: 226 223 216;
+    --input: 214 211 203;
+    --ring: 124 92 252;
+    --radius: 0.75rem;
   }
 }
 
@@ -37,11 +37,6 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
-    background: linear-gradient(
-      180deg,
-      rgb(var(--background)) 0%,
-      rgb(0 0 0) 100%
-    );
     min-height: 100vh;
   }
 
@@ -50,35 +45,12 @@
   }
 
   .gradient-text {
-    background-image: linear-gradient(
-      90deg,
-      rgb(var(--primary)) 0%,
-      rgb(var(--accent) / 0.86) 48%,
-      rgb(var(--primary) / 0.94) 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-size: 200% 200%;
-    animation: gradient-shift 4s ease-in-out infinite;
+    color: rgb(var(--foreground));
     font-weight: 700;
-    text-shadow: 0 0 30px rgb(var(--primary) / 0.26);
-    filter: brightness(1.2) contrast(1.1);
-  }
-
-  @keyframes gradient-shift {
-    0%, 100% { background-position: 0% 50%; }
-    25% { background-position: 100% 50%; }
-    50% { background-position: 200% 50%; }
-    75% { background-position: 100% 50%; }
   }
 
   .hero-gradient {
-    background: radial-gradient(
-      ellipse at center,
-      rgb(var(--primary) / 0.12) 0%,
-      rgb(var(--background) / 0.82) 70%
-    );
+    background: none;
   }
 
   /* Hide scrollbars */
@@ -139,18 +111,14 @@
   /* Mobile optimizations */
   @media (max-width: 768px) {
     .hero-gradient {
-      background: radial-gradient(
-        ellipse at center,
-        rgb(var(--primary) / 0.08) 0%,
-        rgb(var(--background) / 0.92) 50%
-      );
+      background: none;
     }
   }
 
   /* 优化滚动性能 - 移除smooth scrolling减少卡顿 */
   html {
     scroll-behavior: auto;
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   /* 性能优化 - 启用硬件加速 */
@@ -324,27 +292,13 @@
 
   /* 增强主要按钮的效果 */
   .btn-feedback.btn-primary {
-    background: linear-gradient(
-      135deg,
-      rgb(var(--primary) / 0.92) 0%,
-      rgb(var(--accent) / 0.76) 50%,
-      rgb(var(--primary) / 0.92) 100%
-    );
-    box-shadow:
-      0 8px 32px rgb(var(--primary) / 0.28),
-      inset 0 1px 0 rgb(var(--foreground) / 0.2);
+    background: rgb(var(--primary));
+    box-shadow: 0 6px 18px rgb(var(--primary) / 0.22);
   }
 
   .btn-feedback.btn-primary:hover {
-    background: linear-gradient(
-      135deg,
-      rgb(var(--primary)) 0%,
-      rgb(var(--accent) / 0.84) 50%,
-      rgb(var(--primary)) 100%
-    );
-    box-shadow:
-      0 12px 40px rgb(var(--primary) / 0.34),
-      inset 0 1px 0 rgb(var(--foreground) / 0.28);
+    background: rgb(var(--primary) / 0.92);
+    box-shadow: 0 8px 22px rgb(var(--primary) / 0.26);
   }
 
   /* 按钮加载状态 */
@@ -393,15 +347,9 @@
   }
 
   .app-surface-card {
-    border: 1px solid rgb(var(--border) / 0.7);
-    background: linear-gradient(
-      180deg,
-      rgb(var(--card) / 0.96) 0%,
-      rgb(var(--background) / 0.92) 100%
-    );
-    box-shadow:
-      0 20px 48px rgb(0 0 0 / 0.18),
-      inset 0 1px 0 rgb(255 255 255 / 0.04);
+    border: 1px solid rgb(var(--border));
+    background: rgb(var(--card));
+    box-shadow: 0 1px 2px rgb(26 25 23 / 0.04);
   }
 
   .app-surface-card--interactive {
@@ -412,56 +360,34 @@
   }
 
   .app-surface-card--interactive:hover {
-    border-color: rgb(var(--primary) / 0.28);
-    box-shadow:
-      0 28px 56px rgb(0 0 0 / 0.22),
-      inset 0 1px 0 rgb(255 255 255 / 0.05);
+    border-color: rgb(var(--primary) / 0.35);
+    box-shadow: 0 10px 28px rgb(26 25 23 / 0.07);
     transform: translateY(-2px);
   }
 
   .app-floating-panel {
-    border: 1px solid rgb(var(--border) / 0.72);
-    background: linear-gradient(
-      180deg,
-      rgb(var(--card) / 0.84) 0%,
-      rgb(var(--background) / 0.76) 100%
-    );
-    backdrop-filter: blur(18px);
-    box-shadow:
-      0 20px 44px rgb(0 0 0 / 0.18),
-      inset 0 1px 0 rgb(255 255 255 / 0.04);
+    border: 1px solid rgb(var(--border));
+    background: rgb(var(--card));
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 32px rgb(26 25 23 / 0.1);
   }
 
   .app-section-shell {
-    border-top: 1px solid rgb(var(--border) / 0.32);
-    border-bottom: 1px solid rgb(var(--border) / 0.32);
-    background: linear-gradient(
-      180deg,
-      rgb(var(--primary) / 0.05) 0%,
-      rgb(var(--background) / 0.1) 52%,
-      rgb(var(--accent) / 0.04) 100%
-    );
+    border-top: 1px solid rgb(var(--border));
+    border-bottom: 1px solid rgb(var(--border));
+    background: rgb(var(--muted));
   }
 
   .app-icon-surface {
-    border: 1px solid rgb(var(--primary) / 0.2);
-    background: linear-gradient(
-      135deg,
-      rgb(var(--primary) / 0.14) 0%,
-      rgb(var(--accent) / 0.08) 100%
-    );
-    color: rgb(var(--primary) / 0.98);
-    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
+    border: 1px solid rgb(var(--primary) / 0.22);
+    background: rgb(var(--primary) / 0.08);
+    color: rgb(var(--primary));
   }
 
   .app-icon-surface--accent {
-    border-color: rgb(var(--accent) / 0.2);
-    background: linear-gradient(
-      135deg,
-      rgb(var(--accent) / 0.16) 0%,
-      rgb(var(--primary) / 0.08) 100%
-    );
-    color: rgb(var(--accent-foreground) / 0.98);
+    border-color: rgb(var(--primary) / 0.22);
+    background: rgb(var(--primary) / 0.08);
+    color: rgb(var(--primary));
   }
 
   .app-code-surface {
@@ -476,17 +402,13 @@
 
   .app-tint-panel {
     border: 1px solid rgb(var(--primary) / 0.18);
-    background: linear-gradient(
-      135deg,
-      rgb(var(--primary) / 0.12) 0%,
-      rgb(var(--accent) / 0.08) 100%
-    );
+    background: rgb(var(--primary) / 0.06);
   }
 
   .app-tint-badge {
-    border: 1px solid rgb(var(--primary) / 0.2);
-    background: rgb(var(--primary) / 0.1);
-    color: rgb(var(--foreground) / 0.96);
+    border: 1px solid rgb(var(--primary) / 0.22);
+    background: rgb(var(--primary) / 0.08);
+    color: rgb(var(--primary));
   }
 
   .app-tint-badge--accent {
@@ -535,38 +457,31 @@
 
   .app-cta-panel {
     border: 1px solid rgb(var(--primary) / 0.2);
-    background: linear-gradient(
-      135deg,
-      rgb(var(--primary) / 0.14) 0%,
-      rgb(var(--accent) / 0.1) 50%,
-      rgb(var(--background) / 0.86) 100%
-    );
-    box-shadow:
-      0 24px 56px rgb(0 0 0 / 0.18),
-      inset 0 1px 0 rgb(255 255 255 / 0.04);
+    background: rgb(var(--primary) / 0.06);
+    box-shadow: 0 12px 32px rgb(26 25 23 / 0.06);
   }
 }
 
 @layer components {
   .generator-shell {
-    --generator-shadow-rgb: 0 0 0;
-    --generator-surface-base-rgb: 8 11 14;
-    --generator-surface-overlay-rgb: 14 19 24;
-    --generator-surface-elevated-rgb: 18 24 30;
-    --generator-surface-raised-rgb: 22 29 36;
-    --generator-outline-rgb: 112 128 142;
-    --generator-outline-strong-rgb: 150 170 186;
-    --generator-primary-rgb: 88 150 255;
-    --generator-primary-strong-rgb: 221 235 255;
-    --generator-secondary-rgb: 104 210 193;
-    --generator-secondary-strong-rgb: 204 248 240;
-    --generator-success-rgb: 102 204 143;
-    --generator-danger-rgb: 255 120 113;
-    --generator-warning-rgb: 255 183 77;
-    --generator-text-primary-rgb: 244 247 250;
-    --generator-text-secondary-rgb: 217 226 232;
-    --generator-text-tertiary-rgb: 168 180 190;
-    --generator-text-inverse-rgb: 8 11 14;
+    --generator-shadow-rgb: 120 117 109;
+    --generator-surface-base-rgb: 255 255 255;
+    --generator-surface-overlay-rgb: 248 247 244;
+    --generator-surface-elevated-rgb: 255 255 255;
+    --generator-surface-raised-rgb: 243 242 238;
+    --generator-outline-rgb: 214 211 203;
+    --generator-outline-strong-rgb: 168 165 156;
+    --generator-primary-rgb: 124 92 252;
+    --generator-primary-strong-rgb: 96 66 226;
+    --generator-secondary-rgb: 139 116 246;
+    --generator-secondary-strong-rgb: 96 66 226;
+    --generator-success-rgb: 22 163 74;
+    --generator-danger-rgb: 220 38 38;
+    --generator-warning-rgb: 217 119 6;
+    --generator-text-primary-rgb: 26 25 23;
+    --generator-text-secondary-rgb: 74 72 66;
+    --generator-text-tertiary-rgb: 122 119 111;
+    --generator-text-inverse-rgb: 255 255 255;
     position: relative;
     isolation: isolate;
     overflow: clip;
@@ -575,44 +490,7 @@
 
   .generator-shell::before,
   .generator-shell::after {
-    content: "";
-    position: absolute;
-    inset: auto;
-    pointer-events: none;
-    z-index: 0;
-    filter: blur(12px);
-  }
-
-  .generator-shell::before {
-    top: 1rem;
-    left: -6rem;
-    width: 24rem;
-    height: 24rem;
-    border-radius: 9999px;
-    background:
-      radial-gradient(
-        circle,
-        rgb(var(--generator-secondary-rgb) / 0.24) 0%,
-        rgb(var(--generator-secondary-rgb) / 0.08) 34%,
-        transparent 68%
-      );
-    animation: generator-float 16s ease-in-out infinite;
-  }
-
-  .generator-shell::after {
-    right: -7rem;
-    top: 12rem;
-    width: 28rem;
-    height: 28rem;
-    border-radius: 9999px;
-    background:
-      radial-gradient(
-        circle,
-        rgb(var(--generator-primary-rgb) / 0.18) 0%,
-        rgb(var(--generator-primary-rgb) / 0.08) 32%,
-        transparent 72%
-      );
-    animation: generator-float 18s ease-in-out infinite reverse;
+    content: none;
   }
 
   .generator-reveal {

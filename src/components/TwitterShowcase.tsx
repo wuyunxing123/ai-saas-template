@@ -97,51 +97,52 @@ export function TwitterShowcase({
   return (
     <section className="px-4 py-8 bg-background">
       <div className="container mx-auto">
-        {/* 标题区域 - 简化布局，更好居中 */}
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center mb-4">
-            <h2 className="text-3xl md:text-4xl font-bold gradient-text">
-              {twitterShowcase.title}
-            </h2>
-            {/* 滚动按钮 - 移到右侧 */}
-            <div className="flex space-x-2 ml-8">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => scroll('left')}
-                className="app-floating-panel h-10 w-10 p-0 text-foreground hover:border-primary/40 hover:bg-primary/10"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => scroll('right')}
-                className="app-floating-panel h-10 w-10 p-0 text-foreground hover:border-primary/40 hover:bg-primary/10"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </Button>
+        {/* 标题区域 - 左对齐编辑风，滚动按钮靠右 */}
+        <div className="mb-8 flex items-end justify-between gap-4">
+          <div>
+            <div className="mb-3 flex items-center gap-3">
+              <span className="h-px w-8 bg-primary" />
+              <span className="text-sm font-semibold tracking-wide text-primary">
+                {twitterShowcase.title}
+              </span>
             </div>
           </div>
-          
-          <p className="text-lg text-foreground/90 max-w-4xl mx-auto leading-relaxed mb-4">
-            {twitterShowcase.description}
-          </p>
-          
-          {/* 滑动提示 - 简化样式 */}
-          <div className="flex items-center justify-center space-x-2 text-primary/70 text-sm">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            <span>{twitterShowcase.scrollHint}</span>
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
+          <div className="flex space-x-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => scroll('left')}
+              className="h-10 w-10 rounded-full border-border bg-card p-0 text-foreground hover:bg-muted"
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => scroll('right')}
+              className="h-10 w-10 rounded-full border-border bg-card p-0 text-foreground hover:bg-muted"
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </Button>
           </div>
+        </div>
+        <p className="mb-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+          {twitterShowcase.description}
+        </p>
+
+        {/* 滑动提示 - 简化样式 */}
+        <div className="mb-6 flex items-center space-x-2 text-sm text-primary/70">
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+          <span>{twitterShowcase.scrollHint}</span>
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
         </div>
 
         {/* 横向滑动容器 - 优化高度和间距 */}

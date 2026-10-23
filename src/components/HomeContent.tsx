@@ -7,7 +7,10 @@ import { Navigation } from "@/components/Navigation"
 import { TwitterShowcase } from "@/components/TwitterShowcase"
 import { KeyFeatures } from "@/components/KeyFeatures"
 import { HowToSteps } from "@/components/HowToSteps"
+import { Toolbox } from "@/components/Toolbox"
+import { Testimonials } from "@/components/Testimonials"
 import { FAQ } from "@/components/FAQ"
+import { FinalCta } from "@/components/FinalCta"
 import { Footer } from "@/components/Footer"
 import { OrganizationSchema, WebSiteSchema, SoftwareApplicationSchema } from "@/components/StructuredData"
 import { common } from "@/lib/content"
@@ -59,41 +62,38 @@ export function HomeContent({
       />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4">
-        <div className="container mx-auto max-w-5xl text-center">
-          <div className="hero-gradient absolute inset-0 pointer-events-none" />
-          <div className="relative z-10">
-            <div className="app-tint-badge mb-6 inline-block rounded-full px-4 py-2 text-sm">
+      <section className="px-4 pt-32 pb-16">
+        <div className="container mx-auto max-w-5xl">
+          <div className="mb-6 flex items-center gap-3">
+            <span className="h-px w-8 bg-primary" />
+            <span className="text-sm font-semibold tracking-wide text-primary">
               {home.hero.badge}
-            </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-              {home.hero.title}
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto px-4 md:px-0 leading-relaxed">
-              {home.hero.description}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/generate">
-                <Button 
-                  size="lg" 
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 active:scale-95 transition-all duration-200 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg"
-                >
-                  <svg className="w-4 h-4 md:w-5 md:h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2Z" fill="currentColor"/>
-                  </svg>
-                  {common.buttons.startCreating}
-                </Button>
-              </Link>
-              <Link href="/pricing">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-primary/20 bg-background/60 px-6 py-3 text-base backdrop-blur-sm transition-all duration-200 hover:scale-105 active:scale-95 md:px-8 md:py-4 md:text-lg"
-                >
-                  {common.buttons.viewPricing}
-                </Button>
-              </Link>
-            </div>
+            </span>
+          </div>
+          <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">
+            {home.hero.title}
+          </h1>
+          <p className="mb-10 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+            {home.hero.description}
+          </p>
+          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+            <Link href="/generate">
+              <Button
+                size="lg"
+                className="rounded-full bg-foreground px-8 py-3 text-base text-background transition-colors hover:bg-foreground/90"
+              >
+                {common.buttons.startCreating}
+              </Button>
+            </Link>
+            <Link href="/pricing">
+              <Button
+                variant="outline"
+                size="lg"
+                className="rounded-full border-border bg-transparent px-8 py-3 text-base transition-colors hover:bg-muted"
+              >
+                {common.buttons.viewPricing}
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -107,8 +107,17 @@ export function HomeContent({
       {/* How-to Steps Section */}
       <HowToSteps howTo={home.howTo} />
 
+      {/* Toolbox Section */}
+      <Toolbox toolbox={home.toolbox} />
+
+      {/* Testimonials Section */}
+      <Testimonials testimonials={home.testimonials} />
+
       {/* FAQ Section */}
       <FAQ faq={home.faq} />
+
+      {/* Final CTA Section */}
+      <FinalCta finalCta={home.finalCta} />
 
       {/* Footer */}
       <Footer footer={home.footer} />

@@ -1,132 +1,200 @@
 {
   "hero": {
-    "badge": "Professional AI Image Generation Platform",
-    "title": "Create Stunning Images with Flux Kontext AI",
-    "description": "Transform your ideas into professional images with our cutting-edge AI technology. Generate images from text, edit existing images, and process multiple images with the power of Flux Kontext AI."
+    "badge": "专业 AI 图像生成平台",
+    "title": "用一句话，生成能直接使用的作品",
+    "description": "把想法交给 Flux Kontext AI：从文字生成图像、编辑现有图像、批量处理多图，一个工作台完成全部创作。"
   },
   "features": {
-    "title": "Key Features of Flux Kontext AI Platform",
-    "description": "Our Flux Kontext AI combines cutting-edge technology to deliver professional image generation and editing in one seamless platform.",
+    "title": "核心能力",
+    "description": "Flux Kontext 把生成、编辑与批量处理放在同一个平台，覆盖从灵感到交付的完整流程。",
     "items": [
       {
-        "title": "Text to Image Generation",
-        "description": "Transform your text descriptions into stunning, high-quality images with advanced AI technology."
+        "title": "文本生成图像",
+        "description": "用自然语言描述画面，即可生成高质量、构图准确的图像。"
       },
       {
-        "title": "Professional Image Editing",
-        "description": "Edit existing images with natural language instructions for precise modifications."
+        "title": "自然语言修图",
+        "description": "上传图像后用一句话完成精修、换背景、扩图与局部调整。"
       },
       {
-        "title": "Multi-Image Processing",
-        "description": "Process multiple images simultaneously with consistent style and quality."
+        "title": "多图批量处理",
+        "description": "一次处理多张图像，保持风格与质量统一。"
       },
       {
-        "title": "Advanced AI Models",
-        "description": "Powered by Flux Pro and Max models for superior image quality and detail."
+        "title": "先进模型驱动",
+        "description": "由 Flux Pro 与 Max 模型驱动，细节与画质更出色。"
       },
       {
-        "title": "Flexible Aspect Ratios",
-        "description": "Generate images in various aspect ratios from square to ultra-wide formats."
+        "title": "灵活画幅",
+        "description": "支持从方形到超宽的多种画面比例，适配不同用途。"
       },
       {
-        "title": "Professional Output",
-        "description": "Export high-resolution images in multiple formats for professional use."
+        "title": "专业级输出",
+        "description": "可导出多种格式的高分辨率图像，直接用于交付。"
       }
     ]
   },
   "howTo": {
-    "title": "How to Create AI Images in 4 Simple Steps",
-    "description": "Follow these easy steps to create professional AI-generated images with Flux Kontext AI platform.",
-    "alternativeTitle": "How to Create Images with AI",
-    "alternativeDescription": "Follow these simple steps to transform your ideas into professional images using our advanced AI image generation technology.",
+    "title": "四步完成一次 AI 创作",
+    "description": "按下面的步骤，把想法快速变成专业图像。",
+    "alternativeTitle": "如何用 AI 完成一次创作",
+    "alternativeDescription": "从描述到下载，四步把想法变成可交付的图像作品。",
     "steps": [
       {
         "number": "1",
-        "title": "Write Your Prompt",
-        "description": "Enter your text description or creative prompt that you want to convert into a professional image."
+        "title": "写下你的描述",
+        "description": "输入文字提示词，明确主体、风格与使用目的。"
       },
       {
         "number": "2",
-        "title": "Customize Settings",
-        "description": "Choose image style, aspect ratio, quality, and additional features like model type and guidance scale."
+        "title": "调整输出设置",
+        "description": "选择画面比例、质量与模型等参数，减少反复调整。"
       },
       {
         "number": "3",
-        "title": "Generate Image",
-        "description": "Our AI image generation system processes your prompt and creates professional images with advanced AI technology."
+        "title": "生成图像",
+        "description": "AI 理解你的描述，生成专业级图像。"
       },
       {
         "number": "4",
-        "title": "Download & Edit",
-        "description": "Preview your AI-generated images, make any edits, and download your professional image creations."
+        "title": "下载与继续编辑",
+        "description": "预览结果、微调细节，并下载最终版本。"
+      }
+    ]
+  },
+  "toolbox": {
+    "eyebrow": "AI 设计工具箱",
+    "title": "你的创意，有工具接住。",
+    "description": "从一张海报到一套商品视觉，为每一种创作找到合适的入口。",
+    "items": [
+      {
+        "title": "AI 电商视觉",
+        "description": "上传商品图与简介，生成主图与详情页套图。",
+        "tags": ["产品主图", "详情页套图"],
+        "href": "/generate",
+        "cta": "打开工具"
+      },
+      {
+        "title": "AI 海报设计",
+        "description": "让主题、文案与画面各就其位，快速产出活动与社交海报。",
+        "tags": ["多种风格", "中文文案"],
+        "href": "/generate",
+        "cta": "开始设计"
+      },
+      {
+        "title": "一键 LOGO",
+        "description": "从品牌名称与调性出发，探索标志方向并参考定稿。",
+        "tags": ["多款提案", "多种方向"],
+        "href": "/generate",
+        "cta": "开始设计"
+      },
+      {
+        "title": "自然语言修图",
+        "description": "一句话完成精修、换装、换背景与扩图。",
+        "tags": ["换背景", "局部调整"],
+        "href": "/generate",
+        "cta": "打开工具"
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "创作者体验",
+    "title": "一套工作区，适配不同创作角色",
+    "description": "从商品视觉、品牌方案到社交内容，让不同流程都更专注、更高效。",
+    "items": [
+      {
+        "avatar": "商",
+        "name": "电商运营团队",
+        "role": "商品运营 · 独立品牌",
+        "quote": "批量生图把原本需要一天的商品视觉工作，变成更短、更统一的流程。我们可以快速测试方向，也能更从容地准备上新素材。",
+        "tags": ["批量创作", "上新提效"]
+      },
+      {
+        "avatar": "设",
+        "name": "品牌设计团队",
+        "role": "品牌设计 · 创意工作室",
+        "quote": "从真实使用场景出发找灵感更有参考价值。我们可以比较不同视觉方向，继续打磨最合适的方案，并把整个过程留在同一个工作区。",
+        "tags": ["视觉探索", "风格统一"]
+      },
+      {
+        "avatar": "创",
+        "name": "内容创作者",
+        "role": "社交内容 · 独立创作者",
+        "quote": "图片和视频工具集中在一处，一个想法更容易延展成完整内容。构思、测试和交付之间衔接得更自然。",
+        "tags": ["图像与视频", "快速交付"]
       }
     ]
   },
   "faq": {
-    "title": "Flux Kontext AI - Frequently Asked Questions",
-    "description": "Find answers to common questions about our Flux Kontext AI platform and its powerful image generation features.",
+    "title": "常见问题",
+    "description": "开始创作前，你可能想了解这些。",
     "items": [
       {
-        "question": "What is Flux Kontext AI?",
-        "answer": "Flux Kontext AI is an advanced image generation platform that uses cutting-edge artificial intelligence to create stunning images from text descriptions, edit existing images, and process multiple images simultaneously."
+        "question": "Flux Kontext AI 是什么？",
+        "answer": "Flux Kontext AI 是一个先进的图像生成平台：从文字描述生成图像、编辑现有图像，并支持同时处理多张图像。"
       },
       {
-        "question": "How does text-to-image generation work?",
-        "answer": "Our AI analyzes your text description and generates high-quality images using advanced Flux Pro and Max models. Simply describe what you want to see, and our AI creates professional-grade images in seconds."
+        "question": "文本生成图像是如何工作的？",
+        "answer": "AI 会理解你的文字描述，并基于 Flux Pro 与 Max 模型生成高质量图像。只需描述你想看到的画面，几秒内即可得到专业级结果。"
       },
       {
-        "question": "Can I edit existing images with Flux Kontext?",
-        "answer": "Yes! Our platform supports image editing through natural language instructions. Upload an image and describe the changes you want, and our AI will apply those modifications professionally."
+        "question": "可以编辑已有图像吗？",
+        "answer": "可以。上传图像后用自然语言描述想要的修改，AI 会专业地完成相应调整。"
       },
       {
-        "question": "What image formats and sizes are supported?",
-        "answer": "Flux Kontext AI supports multiple aspect ratios including 1:1, 16:9, 9:16, 4:3, 3:2, and 21:9. You can export images in JPEG and PNG formats at high resolution for professional use."
+        "question": "支持哪些画幅和尺寸？",
+        "answer": "支持 1:1、16:9、9:16、4:3、3:2、21:9 等多种画面比例，并可导出 JPEG 与 PNG 的高分辨率图像。"
       },
       {
-        "question": "How many images can I generate at once?",
-        "answer": "You can generate up to 4 images simultaneously with our multi-image processing feature. This allows you to explore different variations of your concept efficiently."
+        "question": "一次可以生成多少张图？",
+        "answer": "最多可同时生成 4 张图像，方便你快速比较同一概念的不同变体。"
       },
       {
-        "question": "What makes Flux Kontext different from other AI image generators?",
-        "answer": "Flux Kontext stands out with its advanced Flux Pro and Max models, professional image editing capabilities, multi-image processing, and flexible aspect ratio support all in one seamless platform."
+        "question": "Flux Kontext 和其他 AI 生图工具有什么不同？",
+        "answer": "Flux Kontext 把先进模型、自然语言修图、多图批量处理与灵活画幅整合在同一个平台，流程更完整。"
       },
       {
-        "question": "Are there any usage limits or restrictions?",
-        "answer": "Usage depends on your plan and API limits. Our platform includes safety controls and content filtering to ensure responsible AI image generation while maintaining creative freedom."
+        "question": "有使用限制吗？",
+        "answer": "用量取决于你的套餐与 API 限额。平台内置安全控制与内容过滤，在保障合规的同时保留创作自由。"
       },
       {
-        "question": "Can I use generated images commercially?",
-        "answer": "Yes, images generated through Flux Kontext AI can typically be used for commercial purposes. Please review the specific terms of service and licensing agreements for detailed usage rights."
+        "question": "生成的图像可以商用吗？",
+        "answer": "通常可以。具体权利请以服务条款与授权协议为准。"
       }
     ]
+  },
+  "finalCta": {
+    "title": "下一张作品，从一句话开始。",
+    "description": "打开创作工作台，描述脑海中的画面，让想法真正被看见。",
+    "button": "开始创作"
   },
   "footer": {
     "brand": {
       "name": "Flux Kontext",
-      "description": "Professional AI image generation platform. Create stunning images from text, edit existing images, and process multiple images with advanced AI technology.",
-      "copyright": "© 2025 Flux Kontext. All rights reserved."
+      "description": "专业 AI 图像生成平台：从文字生成图像、编辑现有图像、批量处理多图。",
+      "copyright": "© 2025 Flux Kontext. 保留所有权利。"
     },
     "contact": {
-      "title": "Contact",
+      "title": "联系我们",
       "email": "{{supportEmail}}"
     },
     "legal": {
-      "title": "Legal",
-      "terms": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "refund": "Refund Policy"
+      "title": "条款与政策",
+      "terms": "服务条款",
+      "privacy": "隐私政策",
+      "refund": "退款政策"
     },
     "languages": {
-      "title": "Languages"
+      "title": "语言"
     },
     "social": {
-      "builtWith": "Built with ❤️ for creators worldwide",
-      "followUs": "Follow us on"
+      "builtWith": "为全世界的创作者打造",
+      "followUs": "关注我们"
     }
   },
   "twitterShowcase": {
-    "title": "AI Image Generation Showcase",
-    "description": "Discover amazing AI-generated images from leading platforms showcasing the latest in artificial intelligence technology.",
-    "scrollHint": "Scroll to explore more"
+    "title": "社区作品展示",
+    "description": "看看创作者们用 AI 生成的作品。",
+    "scrollHint": "左右滑动查看更多"
   }
-} 
+}
