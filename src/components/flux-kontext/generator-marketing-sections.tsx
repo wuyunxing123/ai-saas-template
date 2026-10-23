@@ -29,92 +29,91 @@ export function GeneratorMarketingSections({
 }: GeneratorMarketingSectionsProps) {
   const workflowSteps = [
     {
-      title: "Stage your source",
+      title: "准备素材",
       description:
-        "Drop in a reference image when you need identity, styling, or composition continuity.",
+        "需要保持人物、风格或构图一致时，先放入参考图。",
       icon: Upload,
     },
     {
-      title: "Direct the edit",
+      title: "下达编辑指令",
       description:
-        "Write specific instructions for the change you want instead of wrestling with fragmented controls.",
+        "用一句话写清想要的修改，而不是在零散控件里反复折腾。",
       icon: Edit,
     },
     {
-      title: "Render and iterate",
+      title: "生成并迭代",
       description:
-        "Choose the model tier that matches your speed, cost, and quality target, then refine from the result.",
+        "按速度、成本与质量目标选择模型档位，再基于结果继续打磨。",
       icon: Zap,
     },
   ];
 
   const featureCards = [
     {
-      title: "Character consistency",
+      title: "角色一致性",
       description:
-        "Keep identity, wardrobe, and silhouette stable while you change scene, lighting, or framing.",
+        "更换场景、光线或构图时，保持人物、服装与轮廓稳定。",
       icon: Layers,
     },
     {
-      title: "Directed editing",
+      title: "定向编辑",
       description:
-        "Make precise modifications without rebuilding the full prompt stack for every variation.",
+        "无需为每个变体重写整套提示词，即可做精确修改。",
       icon: Settings,
     },
     {
-      title: "Reference-driven style",
+      title: "参考驱动风格",
       description:
-        "Push new generations toward an existing look instead of starting from visual zero each time.",
+        "让新生成贴近已有视觉，而不是每次从零开始。",
       icon: ImageIcon,
     },
     {
-      title: "Fast iteration loop",
+      title: "快速迭代",
       description:
-        "Stay in a short feedback cycle, so prompt tuning feels like design iteration instead of queue management.",
+        "保持短反馈循环，调提示词像设计迭代，而不是排队等待。",
       icon: Zap,
     },
   ];
 
   const faqs = [
     {
-      question: "What is Flux Kontext best at?",
+      question: "Flux Kontext 最擅长什么？",
       answer:
-        "It shines when you need controlled image generation or editing with context, especially when reference images matter.",
+        "需要带上下文的受控生成或编辑时最出色，尤其是参考图重要的场景。",
     },
     {
-      question: "When should I use Pro vs Max?",
+      question: "Pro 和 Max 怎么选？",
       answer:
-        "Pro is the faster day-to-day workhorse. Max costs more, but it is better when typography, prompt adherence, or final-polish output matters.",
+        "Pro 是日常更快的主力；Max 成本更高，但在文字排版、提示词遵循与成品精修上更好。",
     },
     {
-      question: "Why keep the controls opinionated?",
+      question: "为什么控件做得克制？",
       answer:
-        "Because a smaller, curated control surface usually produces better outcomes than a giant dashboard with every toggle exposed.",
+        "因为小而精的控制面，通常比暴露所有开关的大面板产出更好。",
     },
   ];
 
   const modelCards = [
     {
       key: "pro" as const,
-      title: "Pro Model",
-      credits: "16 Credits",
-      summary: "Balanced for fast editing loops and reliable prompt iteration.",
+      title: "Pro 模型",
+      credits: "16 积分",
+      summary: "兼顾速度与质量，适合快速编辑与稳定迭代。",
       points: [
-        "Faster turnaround for experimentation",
-        "Strong editing and reference support",
-        "Best default for everyday generation",
+        "实验出图更快",
+        "编辑与参考支持强",
+        "日常生成的默认选择",
       ],
     },
     {
       key: "max" as const,
-      title: "Max Model",
-      credits: "32 Credits",
-      summary:
-        "Higher-cost output path for stricter prompts and polished results.",
+      title: "Max 模型",
+      credits: "32 积分",
+      summary: "更高成本的输出路径，适合更严格提示词与精修成品。",
       points: [
-        "Better prompt adherence under pressure",
-        "Stronger typography and detail handling",
-        "Better fit for premium deliverables",
+        "高压下提示词遵循更好",
+        "文字与细节处理更强",
+        "更适合高要求交付",
       ],
     },
   ];
@@ -123,17 +122,13 @@ export function GeneratorMarketingSections({
     <>
       <section className="generator-section-frame generator-reveal mt-8 p-6 sm:p-8">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-8 text-center">
-            <span className="generator-kicker">
-              Operate with less dashboard noise
-            </span>
+          <div className="mb-8">
+            <span className="generator-kicker">更少的界面噪音</span>
             <h2 className="generator-heading mt-4 text-3xl font-semibold sm:text-4xl">
-              A cleaner workflow for image generation and editing
+              更干净的生成与编辑工作流
             </h2>
-            <p className="generator-subheading mx-auto mt-3 max-w-2xl text-sm sm:text-base">
-              The goal is not more knobs. It is a tighter studio flow where
-              uploads, prompting, and model choice feel deliberate instead of
-              scattered.
+            <p className="generator-subheading mt-3 max-w-2xl text-sm sm:text-base">
+              目标不是更多旋钮，而是把上传、提示词与模型选择收进一条更专注的工作流。
             </p>
           </div>
 
@@ -153,7 +148,7 @@ export function GeneratorMarketingSections({
                       variant="outline"
                       className="generator-chip text-[11px]"
                     >
-                      Step {index + 1}
+                      第 {index + 1} 步
                     </Badge>
                   </div>
                   <h3 className="generator-heading text-xl font-semibold">
@@ -171,12 +166,10 @@ export function GeneratorMarketingSections({
 
       <section className="generator-reveal mt-8 py-4">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-8 text-center">
-            <span className="generator-kicker">
-              What the system is actually good at
-            </span>
+          <div className="mb-8">
+            <span className="generator-kicker">它真正擅长的事</span>
             <h2 className="generator-heading mt-4 text-3xl font-semibold sm:text-4xl">
-              Core strengths without the marketing fog
+              去掉营销话术的核心能力
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -205,10 +198,10 @@ export function GeneratorMarketingSections({
 
       <section className="generator-reveal mt-8 py-4">
         <div className="mx-auto max-w-4xl">
-          <div className="mb-8 text-center">
-            <span className="generator-kicker">Straight answers</span>
+          <div className="mb-8">
+            <span className="generator-kicker">直接回答</span>
             <h2 className="generator-heading mt-4 text-3xl font-semibold sm:text-4xl">
-              Frequently asked questions
+              常见问题
             </h2>
           </div>
           <div className="space-y-4">
@@ -231,12 +224,10 @@ export function GeneratorMarketingSections({
 
       <section className="generator-reveal mt-8 py-4">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-8 text-center">
-            <span className="generator-kicker">
-              Choose for workflow, not hype
-            </span>
+          <div className="mb-8">
+            <span className="generator-kicker">按工作流选择，而非噱头</span>
             <h2 className="generator-heading mt-4 text-3xl font-semibold sm:text-4xl">
-              Model tiers mapped to real use cases
+              模型档位对应真实用途
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -296,12 +287,12 @@ export function GeneratorMarketingSections({
                     {!isAvailable ? (
                       <>
                         <Lock className="mr-2 h-4 w-4" />
-                        Upgrade Required
+                        需要升级
                       </>
                     ) : isSelected ? (
-                      "Selected"
+                      "已选择"
                     ) : (
-                      `Select ${model.title}`
+                      `选择${model.title}`
                     )}
                   </Button>
                 </article>

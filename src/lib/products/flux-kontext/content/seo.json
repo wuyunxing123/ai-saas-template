@@ -1,58 +1,58 @@
 {
   "meta": {
-    "title": "Flux Kontext AI - Professional AI Image Generation & Editing Platform",
-    "description": "Advanced AI image generation platform powered by Flux Kontext. Create stunning images from text, edit existing images, and process multiple images with cutting-edge AI technology.",
+    "title": "Flux Kontext AI - 专业 AI 图像生成与编辑平台",
+    "description": "基于 Flux Kontext 的先进 AI 图像生成平台：从文字生成图像、编辑现有图像、批量处理多图。",
     "keywords": [
       "flux kontext ai",
-      "ai image generation",
-      "text to image ai",
-      "ai image editing",
-      "flux ai generator",
-      "professional ai images",
-      "multi-image processing",
-      "ai image creator"
+      "ai 图像生成",
+      "文字生成图像",
+      "ai 修图",
+      "flux ai 生成器",
+      "专业图像生成",
+      "多图批量处理",
+      "ai 图像创作"
     ]
   },
   "openGraph": {
-    "title": "Flux Kontext AI - Professional AI Image Generation Platform",
-    "description": "Create stunning images with advanced AI technology. Text-to-image, image editing, and multi-image processing capabilities."
+    "title": "Flux Kontext AI - 专业 AI 图像生成平台",
+    "description": "用先进 AI 技术生成惊艳图像：文字生成、图像编辑与多图批量处理。"
   },
   "twitter": {
-    "title": "Flux Kontext AI - Professional AI Image Generation Platform",
-    "description": "Create stunning images with advanced AI technology. Text-to-image, image editing, and multi-image processing capabilities."
+    "title": "Flux Kontext AI - 专业 AI 图像生成平台",
+    "description": "用先进 AI 技术生成惊艳图像：文字生成、图像编辑与多图批量处理。"
   },
   "structuredData": {
     "organization": {
       "name": "Flux Kontext",
-      "description": "Professional AI image generation platform powered by Flux Kontext. Create stunning images from text descriptions with advanced AI technology.",
+      "description": "专业 AI 图像生成平台：从文字描述生成惊艳图像，编辑现有图像，批量处理多图。",
       "contactType": "customer service",
-      "availableLanguage": ["English"],
+      "availableLanguage": ["Chinese"],
       "addressCountry": "US"
     },
     "software": {
-      "name": "Flux Kontext AI Image Generator",
-      "description": "Professional AI image generation platform. Create stunning images from text descriptions with advanced Flux Kontext AI technology.",
+      "name": "Flux Kontext AI 图像生成器",
+      "description": "专业 AI 图像生成平台：用 Flux Kontext AI 从文字描述生成惊艳图像。",
       "applicationCategory": "ImageEditingApplication",
       "operatingSystem": "Web Browser",
-      "freeDescription": "Free AI image generation with Flux Kontext",
+      "freeDescription": "免费使用 Flux Kontext 进行 AI 图像生成",
       "features": [
-        "Text to image AI generation",
-        "Image editing with AI",
-        "Multiple image processing",
-        "Professional image output",
-        "Flux Kontext Pro and Max models",
-        "AI-powered image creation"
+        "文字生成图像",
+        "AI 图像编辑",
+        "多图批量处理",
+        "专业级图像输出",
+        "Flux Kontext Pro 与 Max 模型",
+        "AI 驱动的图像创作"
       ]
     },
     "service": {
-      "name": "Flux Kontext AI Image Generation Service",
-      "description": "Professional AI image generation service with multiple pricing plans powered by Flux Kontext technology",
+      "name": "Flux Kontext AI 图像生成服务",
+      "description": "基于 Flux Kontext 技术的专业 AI 图像生成服务，提供多种定价方案",
       "plans": {
-        "free": "Free AI image generation with basic features",
-        "plus": "Enhanced AI image generation with Flux Kontext Pro",
-        "pro": "Premium AI image generation with Flux Kontext Max",
-        "enterprise": "Enterprise-grade AI image generation with priority support"
+        "free": "免费 AI 图像生成，含基础功能",
+        "plus": "进阶 AI 图像生成，含 Flux Kontext Pro",
+        "pro": "高级 AI 图像生成，含 Flux Kontext Max",
+        "enterprise": "企业级 AI 图像生成，含优先支持"
       }
     }
   }
-} 
+}

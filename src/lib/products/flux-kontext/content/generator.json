@@ -1,92 +1,92 @@
 {
-  "title": "Flux Kontext AI Generator",
-  "description": "Create and edit professional images with advanced AI technology",
-  "subtitle": "Transform your ideas into stunning visuals with our cutting-edge AI image generation platform",
+  "title": "Flux Kontext AI 生成器",
+  "description": "用先进 AI 技术创建与编辑专业图像",
+  "subtitle": "把想法变成惊艳画面，一站式完成生成与编辑",
   "prompts": {
-    "textToImage": "Describe the image you want to create...",
-    "editInstructions": "Describe what you want to change in the images...",
-    "referenceImages": "Reference Images (Optional)",
-    "placeholder": "A beautiful sunset over mountains with vibrant colors..."
+    "textToImage": "描述你想生成的画面...",
+    "editInstructions": "描述你想对图像做的修改...",
+    "referenceImages": "参考图（可选）",
+    "placeholder": "山峦之上色彩浓郁的日落..."
   },
   "settings": {
-    "model": "Model",
-    "aspectRatio": "Aspect Ratio",
-    "imageCount": "Image Count",
-    "guidanceScale": "Guidance Scale",
-    "safetyTolerance": "Safety Tolerance",
-    "outputFormat": "Output Format",
-    "seed": "Seed (Optional)",
-    "privateMode": "Private Mode",
-    "generationMode": "Generation Mode"
+    "model": "模型",
+    "aspectRatio": "画面比例",
+    "imageCount": "生成数量",
+    "guidanceScale": "提示词强度",
+    "safetyTolerance": "安全容忍度",
+    "outputFormat": "输出格式",
+    "seed": "随机种子（可选）",
+    "privateMode": "私密模式",
+    "generationMode": "生成模式"
   },
   "models": {
     "pro": {
       "name": "Flux Kontext Pro",
-      "description": "Fast generation with good quality"
+      "description": "生成更快，质量均衡"
     },
     "max": {
       "name": "Flux Kontext Max",
-      "description": "Best quality, slower generation"
+      "description": "质量最佳，生成稍慢"
     }
   },
   "aspectRatios": {
-    "1:1": "Square",
-    "16:9": "Landscape",
-    "9:16": "Portrait",
-    "4:3": "Standard",
-    "3:2": "Photo",
-    "21:9": "Ultra-wide"
+    "1:1": "方形",
+    "16:9": "横版",
+    "9:16": "竖版",
+    "4:3": "标准",
+    "3:2": "摄影",
+    "21:9": "超宽"
   },
   "safetyLevels": {
-    "1": "Most Strict",
-    "2": "Strict",
-    "3": "Moderate",
-    "4": "Permissive",
-    "5": "Most Permissive"
+    "1": "最严格",
+    "2": "严格",
+    "3": "适中",
+    "4": "宽松",
+    "5": "最宽松"
   },
   "modes": {
-    "public": "Public",
-    "private": "Private"
+    "public": "公开",
+    "private": "私密"
   },
   "errors": {
-    "noPrompt": "Please enter a prompt",
-    "noEditPrompt": "Please enter an edit prompt",
-    "noImages": "Please upload images to edit",
-    "invalidImage": "Invalid image format",
-    "rateLimited": "Rate limit exceeded",
-    "serverError": "Server error occurred",
-    "uploadFailed": "File upload failed",
-    "generationFailed": "Sign in to start creating! Get 100 free credits instantly.",
-    "verificationFailed": "Verification failed, please try again",
-    "verificationRequired": "Please complete verification"
+    "noPrompt": "请输入提示词",
+    "noEditPrompt": "请输入编辑描述",
+    "noImages": "请上传需要编辑的图像",
+    "invalidImage": "图像格式不支持",
+    "rateLimited": "请求过于频繁，请稍后再试",
+    "serverError": "服务器出错",
+    "uploadFailed": "文件上传失败",
+    "generationFailed": "登录后即可开始创作，立即赠送 100 积分。",
+    "verificationFailed": "校验失败，请重试",
+    "verificationRequired": "请完成人机校验"
   },
   "features": {
-    "characterConsistency": "Character Consistency",
-    "styleTransfer": "Style Transfer",
-    "multiImageSupport": "Multi-Image Support",
-    "highResolution": "High Resolution Output",
-    "commercialUse": "Commercial Use Rights",
-    "priorityProcessing": "Priority Processing"
+    "characterConsistency": "角色一致性",
+    "styleTransfer": "风格转换",
+    "multiImageSupport": "多图支持",
+    "highResolution": "高分辨率输出",
+    "commercialUse": "商用授权",
+    "priorityProcessing": "优先处理"
   },
   "tips": {
-    "promptEnhancement": "Use descriptive language for better results",
-    "aspectRatioSelection": "Choose aspect ratio based on your intended use",
-    "modelSelection": "Pro for speed, Max for quality",
-    "seedUsage": "Use seed for reproducible results"
+    "promptEnhancement": "描述越具体，效果越好",
+    "aspectRatioSelection": "按用途选择合适的画面比例",
+    "modelSelection": "求快选 Pro，求质选 Max",
+    "seedUsage": "固定种子可复现相同结果"
   },
   "actions": {
-    "textToImage": "Text to Image",
-    "editImage": "Edit Image",
-    "multiEdit": "Multi-Image Edit",
-    "enhance": "Enhance",
-    "upscale": "Upscale"
+    "textToImage": "文字生成图像",
+    "editImage": "编辑图像",
+    "multiEdit": "多图编辑",
+    "enhance": "增强",
+    "upscale": "放大"
   },
   "enhancementPrefixes": [
-    "Professional photo of ",
-    "High-quality image of ",
-    "Artistic rendering of ",
-    "Detailed photograph of ",
-    "Masterpiece depicting ",
-    "Premium quality "
+    "专业摄影作品：",
+    "高质量画面：",
+    "艺术化表现：",
+    "细节丰富的照片：",
+    "杰作级画面：",
+    "高品质呈现："
   ]
-} 
+}

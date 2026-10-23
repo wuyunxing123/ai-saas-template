@@ -236,9 +236,9 @@ export function FluxKontextGenerator() {
     if (count <= userLimits.maxImages) return "";
 
     if (userType === UserType.ANONYMOUS) {
-      return "Sign up to generate up to 4 images";
+      return "注册后最多可生成 4 张";
     } else if (userType === UserType.REGISTERED) {
-      return "Upgrade to Premium to generate up to 12 images";
+      return "升级 Premium 后最多可生成 12 张";
     }
     return "";
   };
@@ -281,7 +281,7 @@ export function FluxKontextGenerator() {
         };
       }
 
-      throw new Error(errorData.message || "File upload failed");
+      throw new Error(errorData.message || "文件上传失败");
     }
 
     let data: any = {};
@@ -296,7 +296,7 @@ export function FluxKontextGenerator() {
         "? Failed to parse upload success response as JSON:",
         parseError,
       );
-      throw new Error("Invalid response format from upload server");
+      throw new Error("上传服务返回格式无效");
     }
 
     return data.url;
@@ -627,7 +627,7 @@ export function FluxKontextGenerator() {
       console.log(
         "?? Detected network/timeout error, auto-refreshing in 3 seconds...",
       );
-      setTurnstileError("Network error detected, auto-refreshing...");
+      setTurnstileError("检测到网络错误，自动刷新中...");
 
       setTimeout(() => {
         console.log("?? Auto-refreshing Turnstile widget...");
@@ -646,7 +646,7 @@ export function FluxKontextGenerator() {
   const handleTurnstileExpire = useCallback(() => {
     setTurnstileToken("");
     setIsTurnstileVerified(false);
-    setTurnstileError("Verification expired, auto-refreshing...");
+    setTurnstileError("校验已过期，自动刷新中...");
     console.log("Turnstile verification expired, will auto-refresh");
 
     // 2ϢԶˢЧ
@@ -748,7 +748,7 @@ export function FluxKontextGenerator() {
     // 如果需要验证但没有token或未验证，需要完成验证
     if (!isTurnstileVerified || !turnstileToken) {
       console.log("❌ Turnstile verification required but not completed");
-      setError("Please complete human verification to continue");
+      setError("请完成人机校验后继续");
       return false;
     }
 
@@ -815,7 +815,7 @@ export function FluxKontextGenerator() {
             );
             setIsTurnstileVerified(false);
             setTurnstileToken("");
-            setTurnstileError("Verification failed, please verify again");
+            setTurnstileError("校验失败，请重新校验");
 
             // Turnstile widget
             if (turnstileRef.current && (turnstileRef.current as any).reset) {
@@ -844,7 +844,7 @@ export function FluxKontextGenerator() {
           if (!responseText || responseText.trim().length === 0) {
             console.error("? Empty response from server");
             throw new Error(
-              "Server returned empty response - please try again",
+              "服务器返回空响应，请重试",
             );
           }
 
@@ -924,7 +924,7 @@ export function FluxKontextGenerator() {
             parseError,
           );
           throw new Error(
-            "Invalid response format from server - please try again",
+            "服务器返回格式无效，请重试",
           );
         }
 
@@ -1106,7 +1106,7 @@ export function FluxKontextGenerator() {
               console.log("🔧 检测到Turnstile验证失败，自动重置验证状态");
               setIsTurnstileVerified(false);
               setTurnstileToken("");
-              setTurnstileError("Verification failed, please verify again");
+              setTurnstileError("校验失败，请重新校验");
 
               // 重置Turnstile widget
               if (turnstileRef.current && (turnstileRef.current as any).reset) {
@@ -1149,7 +1149,7 @@ export function FluxKontextGenerator() {
             if (!responseText || responseText.trim().length === 0) {
               console.error("❌ 服务器返回空响应");
               throw new Error(
-                "Server returned empty response - please try again",
+                "服务器返回空响应，请重试",
               );
             }
 
@@ -1226,7 +1226,7 @@ export function FluxKontextGenerator() {
                   ),
                 );
                 throw new Error(
-                  data.message || data.error || "Server returned an error",
+                  data.message || data.error || "服务器返回错误",
                 );
               }
 
@@ -1239,7 +1239,7 @@ export function FluxKontextGenerator() {
                 throw new Error(
                   data.message ||
                     data.error ||
-                    "Server returned success: false",
+                    "服务器返回 success: false",
                 );
               }
 
@@ -1274,7 +1274,7 @@ export function FluxKontextGenerator() {
             console.error("❌ 解析成功响应JSON失败:", parseError);
             console.error("❌ 原始响应文本:", responseText);
             throw new Error(
-              "Invalid response format from server - please try again",
+              "服务器返回格式无效，请重试",
             );
           }
 
@@ -1453,7 +1453,7 @@ export function FluxKontextGenerator() {
           setRetryCount(0); // 重置重试计数
         } else {
           console.warn("⚠️ result中没有images:", result);
-          throw new Error("No images generated - please try again");
+          throw new Error("未生成图像，请重试");
         }
       } catch (error: any) {
         console.error("❌ ===== 图像生成错误 =====");
@@ -1475,16 +1475,16 @@ export function FluxKontextGenerator() {
         setCountdown(0);
 
         // 🔧 记录错误信息
-        let userFriendlyError = error.message || "Image generation failed";
+        let userFriendlyError = error.message || "图像生成失败";
 
         if (error.message?.includes("fetch")) {
           userFriendlyError =
-            "Network error - please check your connection and try again";
+            "网络错误，请检查连接后重试";
         } else if (error.message?.includes("timeout")) {
           userFriendlyError =
-            "Request timeout - the server is taking too long to respond";
+            "请求超时，服务器响应时间过长";
         } else if (error.message?.includes("JSON")) {
-          userFriendlyError = "Server response error - please try again";
+          userFriendlyError = "服务器响应错误，请重试";
         } else if (error.message?.includes("verification")) {
           userFriendlyError =
             "Human verification failed - please complete verification and try again";
@@ -1532,7 +1532,7 @@ export function FluxKontextGenerator() {
   // 🔧 处理文本生成图像
   const handleTextToImage = useCallback(async () => {
     if (!textPrompt.trim()) {
-      setError("Please enter a prompt");
+      setError("请输入提示词");
       return;
     }
 
@@ -1563,7 +1563,7 @@ export function FluxKontextGenerator() {
   // ?? 🔧 处理图像编辑
   const handleImageEdit = useCallback(async () => {
     if (uploadedImages.length === 0) {
-      setError("Please upload images to edit");
+      setError("请上传需要编辑的图像");
       return;
     }
 
@@ -1575,7 +1575,7 @@ export function FluxKontextGenerator() {
     const hasBlobUrls = uploadedImages.some((url) => url.startsWith("blob:"));
     if (hasBlobUrls) {
       console.log("? Detected blob URLs, waiting for R2 conversion...");
-      setError("Please wait for image upload to complete before editing");
+      setError("请等待图像上传完成后再编辑");
       return;
     }
 
@@ -1658,12 +1658,12 @@ export function FluxKontextGenerator() {
         document.execCommand("copy");
         document.body.removeChild(textArea);
       }
-      setCopySuccess("Link copied!");
+      setCopySuccess("链接已复制");
       // 3����Զ������ʾ
       setTimeout(() => setCopySuccess(""), 3000);
     } catch (error) {
       console.error("Copy failed:", error);
-      setCopySuccess("Copy failed");
+      setCopySuccess("复制失败");
       setTimeout(() => setCopySuccess(""), 3000);
     }
   }, []);
@@ -1735,7 +1735,7 @@ export function FluxKontextGenerator() {
   const handleQuickEdit = useCallback(
     async (image: GeneratedImage, editText: string) => {
       if (!editText.trim()) {
-        setError("Please enter edit instructions");
+        setError("请输入编辑描述");
         return;
       }
 
@@ -1851,7 +1851,7 @@ export function FluxKontextGenerator() {
   }, []);
 
   const handleMissingEditInstructions = useCallback(() => {
-    setError("Please enter edit instructions");
+    setError("请输入编辑描述");
   }, []);
 
   return (

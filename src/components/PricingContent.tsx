@@ -116,18 +116,24 @@ function PricingMainContent({
       {/* Main Content - 优化后的紧凑布局 */}
       <main className="pt-20 pb-16">
         <div className="container mx-auto px-4">
-          {/* Header Section - 统一的标题区域 */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+          {/* Header Section - 左对齐编辑风 */}
+          <div className="mb-12">
+            <div className="mb-4 flex items-center gap-3">
+              <span className="h-px w-8 bg-primary" />
+              <span className="text-sm font-semibold tracking-wide text-primary">
+                定价
+              </span>
+            </div>
+            <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
               {pricing.title}
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
               {pricing.description}
             </p>
           </div>
 
           {/* Plan Type Toggle */}
-          <div className="flex justify-center mb-8">
+          <div className="mb-8 flex justify-start">
             <div className="app-floating-panel flex rounded-xl p-1">
               <button
                 onClick={() => setActiveTab("subscription")}
@@ -154,7 +160,7 @@ function PricingMainContent({
 
           {/* Billing Toggle - 只在订阅计划时显示 */}
           {activeTab === "subscription" && (
-            <div className="flex items-center justify-center mb-8">
+            <div className="mb-8 flex items-center justify-start">
               <div className="flex items-center gap-3">
                 <span className={`text-sm font-medium transition-all duration-300 ${!isYearly ? 'text-primary font-semibold' : 'text-muted-foreground'}`}>
                   {pricing.billing.monthly}
@@ -213,7 +219,7 @@ function PricingMainContent({
                         ${isYearly ? plan.yearlyPrice : plan.monthlyPrice}
                       </span>
                       <span className="text-muted-foreground">
-                        /{isYearly ? 'year' : 'month'}
+                        /{isYearly ? '年' : '月'}
                       </span>
                     </div>
                   </div>
@@ -249,10 +255,10 @@ function PricingMainContent({
                     {loadingPayment === plan.id ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        Processing...
+                        处理中...
                       </>
                     ) : (
-                      plan.buttonText || "Get Started"
+                      plan.buttonText || "开始使用"
                     )}
                   </Button>
                 </div>
@@ -289,7 +295,7 @@ function PricingMainContent({
                     <div className="mb-4">
                       <span className="text-3xl font-bold text-foreground">${pack.price}</span>
                       <div className="text-sm text-muted-foreground mt-1">
-                        {pack.credits} credits
+                        {pack.credits} 积分
                       </div>
                     </div>
                   </div>
@@ -314,10 +320,10 @@ function PricingMainContent({
                     {loadingPayment === pack.id ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        Processing...
+                        处理中...
                       </>
                     ) : (
-                      pack.buttonText || "Purchase"
+                      pack.buttonText || "购买"
                     )}
                   </Button>
                 </div>
@@ -327,8 +333,14 @@ function PricingMainContent({
 
           {/* FAQ Section */}
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">
-              Frequently Asked Questions
+            <div className="mb-8 flex items-center gap-3">
+              <span className="h-px w-8 bg-primary" />
+              <span className="text-sm font-semibold tracking-wide text-primary">
+                直接回答
+              </span>
+            </div>
+            <h2 className="mb-8 text-3xl font-bold tracking-tight">
+              常见问题
             </h2>
             <div className="space-y-6">
               {pricingFAQs.map((faq, index) => (
@@ -370,7 +382,7 @@ export function PricingContent({
         <div className="min-h-screen bg-background flex items-center justify-center">
           <div className="text-center">
             <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4" />
-            <p className="text-muted-foreground">Loading pricing...</p>
+            <p className="text-muted-foreground">加载定价中...</p>
           </div>
         </div>
       }>

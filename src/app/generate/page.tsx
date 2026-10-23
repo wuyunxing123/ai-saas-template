@@ -6,22 +6,18 @@ import { FluxKontextGenerator } from "@/components/FluxKontextGenerator";
 import { generateMultilingualMetadata } from "@/lib/seo/metadata-generator";
 
 export const metadata: Metadata = generateMultilingualMetadata({
-  title: "AI Image Generator - Flux Kontext | Create Professional Images",
+  title: "AI 图像生成器 - Flux Kontext | 生成专业图像",
   description:
-    "Generate and edit professional images with Flux Kontext AI. Text-to-image generation, image editing, and multi-image processing with advanced AI technology.",
+    "用 Flux Kontext AI 生成与编辑专业图像：文字生成图像、自然语言修图、多图批量处理。",
   keywords: [
-    "AI image generator",
-    "Flux Kontext",
-    "text to image",
-    "image editing",
-    "AI art",
-    "professional images",
-    "image generation ai",
-    "ai art creator",
-    "flux ai generator",
-    "ai image creation",
-    "professional ai images",
-    "ai powered imaging",
+    "ai 图像生成器",
+    "flux kontext",
+    "文字生成图像",
+    "ai 修图",
+    "ai 艺术",
+    "专业图像",
+    "图像生成 ai",
+    "ai 创作工具",
   ],
   path: "/generate",
   images: ["/og-generate.png"],

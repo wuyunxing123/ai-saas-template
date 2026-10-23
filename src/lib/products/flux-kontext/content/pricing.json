@@ -1,34 +1,34 @@
 {
-  "title": "Choose Your AI Image Generation Plan",
-  "description": "Select the perfect plan for your AI image generation needs. From basic features to professional-grade solutions.",
+  "title": "选择适合你的创作方案",
+  "description": "从入门到专业，按你的生成需求选择合适的方案。",
   "tabs": {
-    "subscriptionPlans": "Subscription Plans",
-    "creditPacks": "Credit Packs"
+    "subscriptionPlans": "订阅方案",
+    "creditPacks": "积分包"
   },
   "billing": {
-    "monthly": "Monthly",
-    "yearly": "Yearly",
-    "savePercent": "Save 17%"
+    "monthly": "月付",
+    "yearly": "年付",
+    "savePercent": "省 17%"
   },
   "plans": [
     {
       "id": "basic",
       "name": "Basic",
-      "description": "Perfect for hobbyists and beginners",
+      "description": "适合爱好者与新手",
       "monthlyPrice": 0,
       "yearlyPrice": 0,
       "features": [
-        "100 credits on signup",
-        "Standard image resolution",
-        "Basic AI models",
-        "Standard processing speed"
+        "注册赠送 100 积分",
+        "标准图像分辨率",
+        "基础 AI 模型",
+        "标准处理速度"
       ],
-      "buttonText": "Get Started Free"
+      "buttonText": "免费开始"
     },
     {
       "id": "plus",
       "name": "Plus",
-      "description": "For creators and professionals",
+      "description": "适合创作者与专业人士",
       "monthlyPrice": 9.90,
       "yearlyPrice": 99,
       "packageIds": {
@@ -36,21 +36,21 @@
         "yearly": "plus_yearly"
       },
       "features": [
-        "1900 credits per month",
-        "24000 credits per year (2000/month)",
-        "High resolution images",
-        "Advanced AI models",
-        "Priority processing",
-        "Commercial usage rights",
-        "Priority support"
+        "每月 1900 积分",
+        "每年 24000 积分（合 2000/月）",
+        "高分辨率图像",
+        "进阶 AI 模型",
+        "优先处理",
+        "商用授权",
+        "优先支持"
       ],
       "isPopular": true,
-      "buttonText": "Subscribe"
+      "buttonText": "立即订阅"
     },
     {
       "id": "pro",
       "name": "Pro",
-      "description": "For teams and businesses",
+      "description": "适合团队与企业",
       "monthlyPrice": 29.90,
       "yearlyPrice": 299,
       "packageIds": {
@@ -58,86 +58,86 @@
         "yearly": "pro_yearly"
       },
       "features": [
-        "8900 credits per month",
-        "120000 credits per year (10000/month)",
-        "Ultra-high resolution",
-        "All AI models access",
-        "Fastest processing",
-        "Commercial usage rights",
-        "Priority support"
+        "每月 8900 积分",
+        "每年 120000 积分（合 10000/月）",
+        "超高分辨率",
+        "全部 AI 模型",
+        "最快处理速度",
+        "商用授权",
+        "优先支持"
       ],
-      "buttonText": "Subscribe"
+      "buttonText": "立即订阅"
     }
   ],
   "creditPacks": [
     {
       "id": "starter",
-      "name": "Starter Pack",
-      "description": "Great for occasional use",
+      "name": "入门包",
+      "description": "适合偶尔使用",
       "credits": 600,
       "price": 4.90,
       "packageId": "starter",
-      "features": ["Never expires"],
-      "buttonText": "Purchase"
+      "features": ["永不过期"],
+      "buttonText": "购买"
     },
     {
       "id": "creator",
-      "name": "Creator Pack",
-      "description": "Ideal for professional creators",
+      "name": "创作者包",
+      "description": "适合专业创作者",
       "credits": 4000,
       "price": 15.00,
       "packageId": "creator",
-      "features": ["Never expires"],
+      "features": ["永不过期"],
       "isPopular": true,
-      "buttonText": "Purchase"
+      "buttonText": "购买"
     },
     {
       "id": "business",
-      "name": "Business Pack",
-      "description": "Best value for businesses & heavy users",
+      "name": "企业包",
+      "description": "适合企业与重度用户，性价比最高",
       "credits": 18000,
       "price": 60.00,
       "packageId": "business",
-      "features": ["Never expires"],
-      "buttonText": "Purchase"
+      "features": ["永不过期"],
+      "buttonText": "购买"
     }
   ],
   "notice": {
-    "title": "Important Notice",
-    "content": "We are committed to delivering exceptional AI-powered visual content creation and editing experiences. For all premium customers, if you're not completely satisfied with our service, we offer discretionary refunds. Contact us anytime for FOUNDER FIRST PRIORITY support and personalized assistance to ensure your complete satisfaction with our platform."
+    "title": "重要说明",
+    "content": "我们致力于提供出色的 AI 视觉内容创作与编辑体验。所有付费用户如对服务不满意，我们提供酌情退款。欢迎随时联系我们，获得创始用户优先支持与一对一协助。"
   },
   "faq": [
     {
-      "question": "Can I cancel my subscription anytime?",
-      "answer": "Yes, you can cancel your subscription at any time. Your access will continue until the end of your current billing period."
+      "question": "可以随时取消订阅吗？",
+      "answer": "可以。你可以随时取消订阅，服务会持续到当前计费周期结束。"
     },
     {
-      "question": "How are credits calculated within the app?",
-      "answer": "Please check the credit calculation details in the generation interface."
+      "question": "应用内积分是如何计算的？",
+      "answer": "请在生成界面查看各操作的积分消耗明细。"
     },
     {
-      "question": "Can I use the generated images commercially?",
-      "answer": "Yes, Plus and Pro plan subscribers have full commercial rights to use their generated images for business purposes."
+      "question": "生成的图像可以商用吗？",
+      "answer": "可以。Plus 与 Pro 订阅用户对所生成的图像拥有完整商用权利。"
     },
     {
-      "question": "What is your refund policy?",
-      "answer": "Please refer to our Refund Policy in the footer for detailed information about our refund terms and conditions."
+      "question": "退款政策是什么？",
+      "answer": "详见页脚的退款政策，了解退款条款与条件。"
     },
     {
-      "question": "Will my unused credits roll over to the next month or billing cycle?",
-      "answer": "Credits expire at the end of each billing cycle and do not roll over to the next period to ensure fair usage."
+      "question": "未用完的积分会结转到下个月吗？",
+      "answer": "积分在每个计费周期结束时过期，不会结转，以保障公平使用。"
     },
     {
-      "question": "Can I change my plan later?",
-      "answer": "Yes, you can upgrade or downgrade your plan at any time."
+      "question": "之后可以更换方案吗？",
+      "answer": "可以。你可以随时升级或降级方案。"
     },
     {
-      "question": "How can I get technical support?",
-      "answer": "Get help through our customer service center by emailing {{supportEmail}}. Our team will respond to your inquiries as soon as possible."
+      "question": "如何获得技术支持？",
+      "answer": "通过客服中心 {{supportEmail}} 联系我们，我们会尽快回复。"
     },
     {
-      "question": "What should I do if I run out of my credits mid-month?",
-      "answer": "You can purchase additional credit packs or upgrade to a higher tier plan that includes more monthly credits."
+      "question": "月中积分用完了怎么办？",
+      "answer": "可以购买额外积分包，或升级到每月积分更多的方案。"
     }
   ]
-} 
+}

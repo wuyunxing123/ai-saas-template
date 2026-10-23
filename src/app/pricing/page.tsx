@@ -4,17 +4,17 @@ import { productContent } from '@/app/product-content'
 import { generateMultilingualMetadata } from '@/lib/seo/metadata-generator'
 
 export const metadata: Metadata = generateMultilingualMetadata({
-  title: 'Pricing Plans - Flux Kontext AI Image Generation | Affordable AI Art',
-  description: 'Choose the perfect plan for your AI image generation needs. Flux Kontext offers flexible pricing for professional AI image creation, editing, and processing.',
+  title: '定价方案 - Flux Kontext AI 图像生成 | 灵活的创作套餐',
+  description: '按你的 AI 图像生成需求选择合适的方案：从免费入门到专业级订阅与积分包。',
   keywords: [
-    'flux kontext pricing',
-    'ai image generation pricing',
-    'flux ai plans',
-    'ai art pricing',
-    'professional ai images cost',
-    'flux kontext subscription',
-    'ai image generator plans',
-    'affordable ai art'
+    'flux kontext 定价',
+    'ai 图像生成 价格',
+    'flux ai 方案',
+    'ai 艺术 定价',
+    '专业图像 成本',
+    'flux kontext 订阅',
+    'ai 图像生成器 套餐',
+    '平价 ai 艺术'
   ],
   path: '/pricing',
   images: ['/og-pricing.png'],
