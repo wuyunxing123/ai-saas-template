@@ -8,7 +8,8 @@ import { Button } from "@/components/ui/button"
 import { LogoVariants } from "@/components/Logo"
 import { ChevronDown, User, LogOut, Code, BookOpen } from "lucide-react"
 // 导入文案系统
-import { common } from "@/lib/content"
+import { getCommonForLocale } from "@/lib/content"
+import { getLocaleFromPathname } from "@/lib/content/locale"
 
 export function Navigation() {
   const pathname = usePathname()
@@ -16,6 +17,8 @@ export function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false)
   const [isResourcesMenuOpen, setIsResourcesMenuOpen] = useState(false)
+
+  const common = getCommonForLocale(getLocaleFromPathname(pathname ?? "/"))
   
   // 点击外部关闭下拉菜单
   useEffect(() => {

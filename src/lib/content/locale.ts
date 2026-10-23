@@ -10,8 +10,8 @@
 
 // 支持的语言列表 - 16 种语言
 export const SUPPORTED_LOCALES = [
-  'en',  // English (默认)
-  'zh',  // 中文
+  'en',  // English
+  'zh',  // 中文 (默认)
   'de',  // Deutsch
   'es',  // Español
   'fr',  // Français
@@ -31,7 +31,7 @@ export const SUPPORTED_LOCALES = [
 export type SupportedLocale = typeof SUPPORTED_LOCALES[number]
 
 // 默认语言
-export const DEFAULT_LOCALE: SupportedLocale = 'en'
+export const DEFAULT_LOCALE: SupportedLocale = 'zh'
 
 // 语言显示名称
 export const LOCALE_NAMES = {

@@ -16,9 +16,19 @@
 
 import authData from './auth.json'
 import commonData from './common.json'
+import commonEnData from './common.en.json'
+import type { SupportedLocale } from './locale'
 
 export const auth = authData
 export const common = commonData
 
 export type AuthData = typeof authData
 export type CommonData = typeof commonData
+
+/**
+ * 共享 chrome（导航等）目前只维护中 / 英两套文案：
+ * 默认语言中文用中文，其余语言回退英文。
+ */
+export function getCommonForLocale(locale: SupportedLocale): CommonData {
+  return locale === 'zh' ? commonData : commonEnData
+}

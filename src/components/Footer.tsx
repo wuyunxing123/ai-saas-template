@@ -29,12 +29,12 @@ export function Footer({ footer }: { footer: FooterContent }) {
   ]
 
   return (
-    <footer className="mt-16 border-t border-border/60 bg-[linear-gradient(180deg,rgb(var(--card)/0.9)_0%,rgb(var(--background)/0.96)_100%)]">
+    <footer className="mt-16 border-t border-border bg-card">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <div className="text-2xl font-bold text-primary">
+            <div className="text-2xl font-bold text-foreground">
               {footer.brand.name}
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -78,10 +78,10 @@ export function Footer({ footer }: { footer: FooterContent }) {
               {languages.map((lang) => (
                 <a
                   key={lang.code}
-                  href={`/${lang.code}`}
+                  href={lang.code === 'zh' ? '/' : `/${lang.code}`}
                   className={`flex items-center space-x-2 transition-all duration-200 text-sm py-1 hover:font-semibold active:scale-95 ${
-                    lang.code === 'en' 
-                      ? 'text-primary font-medium' 
+                    lang.code === 'zh'
+                      ? 'text-primary font-medium'
                       : 'text-muted-foreground hover:text-primary'
                   }`}
                 >
